@@ -1,0 +1,16 @@
+.mat-sidenav-container {
+  height: 100%;
+}
+
+.nav {
+  min-width: 200px;
+
+  a div {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.container {
+  padding: 20px 30px 50px;
+}

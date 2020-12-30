@@ -1,0 +1,6 @@
+<div class="container">
+  <app-toolbar (toggleSidebarClick)="sidebar.toggle()"></app-toolbar>
+  <app-sidebar #sidebar>
+    <router-outlet></router-outlet>
+  </app-sidebar>
+</div>
