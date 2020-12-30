@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {interval, timer} from 'rxjs';
 
 @Component({
   selector: 'app-buttons',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
+  disabled = false;
   constructor() { }
 
   ngOnInit(): void {
+    interval(5000).subscribe(res => {
+      this.disabled = !this.disabled;
+      console.log('timer ', this.disabled);
+    });
   }
 
 }

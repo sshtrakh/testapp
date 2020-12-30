@@ -1,1 +1,7 @@
-<p>buttons works!</p>
+
+<p>Every a few seconds buttons change disable status(gray color)</p>
+<div class="button-container">
+<button appSmallButton [disabled]="disabled">{{ 'small'| uppercase }}</button>
+<button appMediumButton [disabled]="disabled">{{ 'medium'| uppercase }}</button>
+<button appLargeButton [disabled]="disabled">{{ 'large'| uppercase }}</button>
+</div>

@@ -14,6 +14,7 @@ export class SidebarComponent implements OnInit {
     {path: './customer-details', title: 'Customer'},
     {path: './account-details', title: 'Account'},
     {path: './form', title: 'Form' },
+    {path: './buttons', title: 'Buttons'}
   ];
 
   constructor() { }
