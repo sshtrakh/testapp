@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToolbarModule} from './toolbar/toolbar.module';
 import {SidebarModule} from './sidebar/sidebar.module';
 import {MatNativeDateModule} from '@angular/material/core';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     ToolbarModule,
     SidebarModule,
     MatNativeDateModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

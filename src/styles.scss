@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 .row {
   margin: 0px -15px;
@@ -13,6 +15,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .col {
   width: 100%;
-  padding: 0 15px;
-  margin-bottom: 10px;
+  margin: 0 15px 10px;
 }
+ .col-50 {
+   width: calc(50% - 30px);
+   margin: 0 15px 10px;
+ }
