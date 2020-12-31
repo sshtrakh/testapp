@@ -3,6 +3,7 @@ import {Directive, ElementRef, HostBinding, HostListener, Input} from '@angular/
 const DEFAULT_BACKGROUND = '#e8acd9';
 const HOVER_BACKGROUND = '#ce3783';
 const DISABLED_BACKGROUND = 'rgba(156,129,150,0.57)';
+
 @Directive()
 export class ButtonBaseDirective {
 
@@ -22,6 +23,7 @@ export class ButtonBaseDirective {
     this._disabled = val;
     this.backgroundColor = val ? DISABLED_BACKGROUND : DEFAULT_BACKGROUND;
   }
+
   get disabled(): boolean {
     return this._disabled;
   }
