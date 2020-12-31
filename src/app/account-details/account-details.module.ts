@@ -6,6 +6,11 @@ import { AccountDetailsLegalInfoComponent } from './account-details-legal-info/a
 import { AccountDetailsSupportComponent } from './account-details-support/account-details-support.component';
 import { AccountDetailsTransactionHistoryComponent } from './account-details-transaction-history/account-details-transaction-history.component';
 import { AccountDetailsSettingsComponent } from './account-details-settings/account-details-settings.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -14,6 +19,11 @@ import { AccountDetailsSettingsComponent } from './account-details-settings/acco
   imports: [
     CommonModule,
     AccountRoutingModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatButtonModule,
   ]
 })
 export class AccountDetailsModule { }

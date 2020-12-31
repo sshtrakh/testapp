@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountDetailsLegalInfoComponent implements OnInit {
 
+  passportNumber = '48753786';
+
   constructor() { }
 
   ngOnInit(): void {

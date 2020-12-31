@@ -1,1 +1,15 @@
-<p>account-details-support works!</p>
+<form [formGroup]="form" class="row">
+  <mat-form-field class="col">
+    <mat-label>Email</mat-label>
+    <input formControlName="email" type="email" matInput>
+  </mat-form-field>
+
+  <mat-form-field class="col">
+    <mat-label>Leave a comment</mat-label>
+    <textarea matInput formControlName="comment"></textarea>
+  </mat-form-field>
+
+  <div class="col align-right">
+    <button (click)="onSave()" mat-raised-button color="accent" [disabled]="form.invalid">OK</button>
+  </div>
+</form>
