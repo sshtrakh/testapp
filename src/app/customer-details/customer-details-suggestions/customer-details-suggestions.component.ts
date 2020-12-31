@@ -10,6 +10,7 @@ import {SuggestionInterface} from './suggestion.interface';
 export class CustomerDetailsSuggestionsComponent implements OnInit {
 
   images: SuggestionInterface[];
+
   constructor(private service: CustomerDetailsSuggestionsService) {
   }
 
@@ -17,7 +18,6 @@ export class CustomerDetailsSuggestionsComponent implements OnInit {
     this.service.getPhotos().subscribe(res => {
       this.images = res;
     });
-
   }
 
 }

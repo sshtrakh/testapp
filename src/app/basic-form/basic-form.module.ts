@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { BasicFormRoutingModule } from './basic-form-routing.module';
-import { BasicFormComponent } from './basic-form.component';
+import {BasicFormRoutingModule} from './basic-form-routing.module';
+import {BasicFormComponent} from './basic-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatRadioGroup, MatRadioModule} from '@angular/material/radio';
+import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';

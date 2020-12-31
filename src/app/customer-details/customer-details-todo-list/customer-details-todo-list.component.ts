@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-customer-details-todo-list',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDetailsTodoListComponent implements OnInit {
   todos: string[] = ['Celebrate New Year', 'Sing SoftKitty', 'Buy new iphone', 'Plant a tree', 'Build a robot'];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
@@ -7,9 +7,11 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./account-details-support.component.scss']
 })
 export class AccountDetailsSupportComponent implements OnInit {
+
   form: FormGroup;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -21,6 +23,5 @@ export class AccountDetailsSupportComponent implements OnInit {
   onSave(): void {
     alert(`Your message: "${this.form.value.comment}" was send. We will reply you on email: ${this.form.value.email}`);
     this.form.reset();
-
   }
 }

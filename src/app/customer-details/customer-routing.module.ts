@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {Router, RouterModule, Routes} from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {GridComponent} from '../grid/grid.component';
 import {CustomerDetailsHeaderComponent} from './customer-details-header/customer-details-header.component';
 import {CustomerDetailsTodoListComponent} from './customer-details-todo-list/customer-details-todo-list.component';
@@ -9,16 +8,23 @@ import {CustomerDetailsContactsComponent} from './customer-details-contacts/cust
 
 const routes: Routes = [{
   path: '', component: GridComponent,
-  children: [{path: '', outlet: 'header', component: CustomerDetailsHeaderComponent}, {
+  children: [{
+    path: '',
+    outlet: 'header',
+    component: CustomerDetailsHeaderComponent
+  }, {
     path: '',
     outlet: 'left',
     component: CustomerDetailsTodoListComponent
-  },
-    {path: '', outlet: 'right', component: CustomerDetailsSuggestionsComponent}, {
-      path: '',
-      outlet: 'footer',
-      component: CustomerDetailsContactsComponent
-    }]
+  }, {
+    path: '',
+    outlet: 'right',
+    component: CustomerDetailsSuggestionsComponent
+  }, {
+    path: '',
+    outlet: 'footer',
+    component: CustomerDetailsContactsComponent
+  }]
 }];
 
 @NgModule({

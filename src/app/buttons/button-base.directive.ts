@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostBinding, HostListener, Input} from '@angular/core';
+import {Directive, HostBinding, HostListener, Input} from '@angular/core';
 
 const DEFAULT_BACKGROUND = '#e8acd9';
 const HOVER_BACKGROUND = '#ce3783';

@@ -10,7 +10,6 @@ export class SidebarComponent implements OnInit {
 
   @ViewChild(MatSidenav) sidenav: MatSidenav;
   links: { path: string, title: string }[] = [
-    // {path: '../', title: 'Main'},
     {path: './customer-details', title: 'Customer'},
     {path: './account-details', title: 'Account'},
     {path: './form', title: 'Form' },

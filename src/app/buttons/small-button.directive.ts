@@ -1,10 +1,9 @@
-import {Directive, ElementRef, HostBinding, HostListener, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Directive, HostBinding} from '@angular/core';
 import {ButtonBaseDirective} from './button-base.directive';
 
 
 @Directive({
   selector: 'button[appSmallButton]',
-
 })
 export class SmallButtonDirective extends ButtonBaseDirective {
 
