@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-account-details-settings',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./account-details-settings.component.scss']
 })
 export class AccountDetailsSettingsComponent implements OnInit {
+  form: FormGroup;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+    this.form = new FormGroup({
+      email: new FormControl(),
+      desktop: new FormControl(),
+      sms: new FormControl(),
+    });
+  }
+
+  onSubmit(): void {
+
+    alert('Saved!');
+  }
 }

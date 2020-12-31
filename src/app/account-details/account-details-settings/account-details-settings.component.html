@@ -1,1 +1,18 @@
-<p>account-details-settings works!</p>
+<h3>Notification settings</h3>
+<form class="row" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div class="col">
+    <mat-slide-toggle formControlName="email">Email</mat-slide-toggle>
+  </div>
+  <div class="col">
+    <mat-slide-toggle formControlName="desktop">Desktop</mat-slide-toggle>
+  </div>
+  <div class="col">
+    <mat-slide-toggle formControlName="sms">Sms</mat-slide-toggle>
+  </div>
+
+
+  <div class="col align-right">
+    <button type="submit" mat-raised-button color="accent" [disabled]="form.invalid">OK</button>
+  </div>
+</form>

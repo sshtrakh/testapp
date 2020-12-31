@@ -18,7 +18,7 @@ export class CustomerDetailsSuggestionsService {
   getPhotos(): Observable<SuggestionInterface[]> {
     return this.http.get<any[]>(this.baseUri, {
       headers: {Authorization: 'Client-ID RYIR0TJv5D5Zf5DyHnEXudGsNDqsPH3Rh4WlMf5DqVs'},
-      params: {count: '4'}
+      params: {count: '12'}
     }).pipe(map( res => res.map(v => ({
       url: v.urls.small ,
       alt: v.alt_description
